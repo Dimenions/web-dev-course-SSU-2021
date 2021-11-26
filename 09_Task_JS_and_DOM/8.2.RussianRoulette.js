@@ -1,5 +1,22 @@
+function startTask_8_2() {
+    var numberOfPeople = document.getElementById("Task_8.2NumberOfPeople").value;
+    var bulletPosition = document.getElementById("Task_8.2").value;
+    document.getElementById("ResultTask_8.2").innerHTML = RussianRoulette(parseInt(numberOfPeople, 10), parseInt(bulletPosition, 10)).toString();
+}
+
+function resetTask_8_2() {
+    document.getElementById("Task_8.2NumberOfPeople").value = "";
+    document.getElementById("Task_8.2").value = "";
+    document.getElementById("ResultTask_8.2").innerHTML = "";
+}
+
 function RussianRoulette(numberOfPeople, bulletPosition) 
 {
+    if (numberOfPeople <=0 || bulletPosition <0)
+    {
+        return "Ошибка! Некорректно введены данные";
+    }
+
     let queue = Array.from({ length: numberOfPeople }, (_, i) => i + 1);
     
     for (let transfer = 1; queue.length > 1; transfer++) 
@@ -15,6 +32,8 @@ function RussianRoulette(numberOfPeople, bulletPosition)
     return queue.shift();
 }
 
+
+/*
 console.log("8.2. Игра на выбывание ")
 console.log("7 человек, выбывает каждый 3")
 console.log("Победил: ")
@@ -34,4 +53,4 @@ console.log(RussianRoulette(14, 2));
 
 console.log("100 человек, выбывает каждый 1")
 console.log("Победил: ")
-console.log(RussianRoulette(100, 1));
+console.log(RussianRoulette(100, 1));*/

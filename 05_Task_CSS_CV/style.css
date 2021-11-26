@@ -1,0 +1,81 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family:'Segoe UI', sans-serif;
+  }
+  
+  .my-avatar {
+    width: 75px;
+  }
+  
+  header {
+    margin-top: 10px;
+    background-color: rgb(241, 239, 239);
+  }
+  
+  .contacts {
+      text-align: right;
+      padding-right: 100px;
+    }
+  
+  table {
+    padding: 0 30px;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .about-me {
+    width: 100%;
+  }
+  
+  .td-picture {
+    width: 75px;
+  }
+  
+  section td:first-of-type {
+    width: 15%;
+  }
+  
+  section hr {
+    margin-left: 30px;
+    margin-right: 50px;
+    opacity: 0.4;
+    color:rgb(56, 54, 54);
+  }
+  
+  .headerline {
+    border: 1px solid rgb(233, 166, 41);
+    margin: 0;;
+  }
+  
+  h2 {
+    color: rgb(255, 72, 0);
+  }
+  
+  h2,
+  h3 {
+    font-weight: 300;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  progress {
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    color:rgb(175, 100, 100);
+  }
+  
+  a:hover {
+    color: rgb(189, 115, 115);
+  }
+  

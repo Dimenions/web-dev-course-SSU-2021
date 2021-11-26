@@ -1,8 +1,18 @@
+function startTask_7_3() {
+    var n = document.getElementById("Task_7.3").value;
+    document.getElementById("ResultTask_7.3").innerHTML = GetFormula(parseInt(n, 10)).toString();
+}
+
+function resetTask_7_3() {
+    document.getElementById("Task_7.3").value = "";
+    document.getElementById("ResultTask_7.3").innerHTML = "";
+}
+
 function GetFormula(n) {
     var formula = "";
 	var negativeDegree = false;
 	if(!Number.isInteger(n) || n < -200 || n > 200)
-		return "Error!! Invalid input";
+		return "Ошибка! Некорректно введены данные";
 	if (n == 0)
 	    return "1"
 	else if (n < 0) {
@@ -40,6 +50,7 @@ function GetVariablePush(name, degree) {
     }
 }
 
+/*
 console.log("7.3. Бином Ньютона")
 console.log("Входные данные: 0")
 console.log(GetFormula(0))
@@ -63,4 +74,4 @@ console.log("Входные данные: 201")
 console.log(GetFormula(201))
 
 console.log("Входные данные: 3.14")
-console.log(GetFormula(3.14))
+console.log(GetFormula(3.14))*/

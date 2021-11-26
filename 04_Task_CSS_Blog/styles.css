@@ -1,0 +1,53 @@
+a:hover, a:visited:hover {
+    color: blue;
+}
+a:visited {
+    color: green;
+}
+
+.header {
+    width: 100%;
+    background: yellow;
+    text-align: center;
+}
+
+.left-menu {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content {
+    width: 60%;
+    border-left: 4px solid green;
+    padding: 10px 0 0 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right-menu {
+    list-style-type: none;
+    margin-top: 20px;
+    width: 20%;
+    border: 4px dotted green;
+    display: inline-block;
+    vertical-align: top;
+    text-align: end;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+}
+
+.right-menu-text {
+    padding-right: 10px;
+}
+
+.footer {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
